@@ -1,4 +1,4 @@
-name: POEcybersecurityawareness CI
+name: POE cybersecurity awareness CI
 
 on:
   push:
@@ -21,10 +21,10 @@ jobs:
         uses: NuGet/setup-nuget@v1
 
       - name: Restore NuGet Packages
-        run: nuget restore "POEcybersecurityawareness.sln"
+        run: nuget restore "POE cybersecurity awareness.sln"
 
       - name: Check Code Formatting
-        run: dotnet format --verify-no-changes "POEcybersecurityawareness.sln" || throw
+        run: dotnet format --verify-no-changes "POE cybersecurity awareness.sln" || exit 1
 
       - name: Build Project
-        run: msbuild "POEcybersecurityawareness.sln" /p:Configuration=Release
+        run: msbuild "POE cybersecurity awareness.sln" /p:Configuration=Release
