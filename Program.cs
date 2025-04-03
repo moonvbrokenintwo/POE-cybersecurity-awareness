@@ -47,6 +47,7 @@ namespace chatbox_cybersecurity_00
 
             // Chat Loop
             ChatLoop();
+
         }
 
         static void DisplayAsciiArt()
